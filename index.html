@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Gradient Background</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Background Generator</h1>
-  <input class="color1" type="color" name="color1" value="#00ff00">
-  <input class="color2" type="color" name="color2" value="#ff0000">
-  <h2>Current CSS Background</h2>
-  <h3></h3>
-  <script type="text/javascript" src="script.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Background Gradient</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Oswald|Roboto:400,700"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="style.css"
+        />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <h1 class="heading font--gloria">Background Generator</h1>
+            <div class="input__wrapper">
+                <input
+                    type="color"
+                    name="color1"
+                    class="color1 colorPicker"
+                    id="Color1"
+                />
+                <input
+                    type="color"
+                    name="color2"
+                    class="color2 colorPicker"
+                    id="Color2"
+                />
+            </div>
+            <button id="random" class="font--roboto">Random!</button>
+            <h2 class="subheading font--roboto">Current CSS Background</h2>
+            <h3 class="font--roboto body--output" id="output"></h3>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
